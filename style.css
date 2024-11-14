@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5; /* Fondo claro para el cuerpo */
+    color: #444;
+    padding-bottom: 60px;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+header {
+    background: linear-gradient(45deg, #1D4784, #A50044); /* Degradado blaugrana */
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    border-bottom: 5px solid #fff;
+}
+
+header h1 {
+    font-size: 3.2em;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1.6em;
+    font-weight: 300;
+}
+
+section {
+    padding: 30px 0;
+    margin: 20px 0;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    font-weight: 600;
+    color: #1D4784; /* Azul característico del Barça */
+}
+
+#biografia p {
+    text-align: justify;
+    line-height: 1.8;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#logros ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#logros li {
+    margin: 12px 0;
+    color: #555;
+}
+
+#estadisticas .stats {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+#estadisticas .stat {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    padding: 25px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+#estadisticas .stat:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(45deg, #1D4784, #A50044); /* Efecto de hover con colores blaugranas */
+    color: white;
+}
+
+#estadisticas h3 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #1D4784;
+}
+
+#galeria .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+#galeria .gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+}
+
+#galeria .gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    filter: brightness(1.1);
+    background: linear-gradient(45deg, #1D4784, #A50044); /* Efecto hover en las imágenes */
+}
+
+footer {
+    background: linear-gradient(45deg, #1D4784, #A50044); /* Degradado blaugrana */
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 1.1em;
+    font-weight: 300;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.popup-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    color: #aaa;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
